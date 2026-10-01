@@ -54,6 +54,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  overflow-x: hidden; /* Prevents horizontal scroll on mobile */
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -127,6 +129,7 @@ button { font-family: inherit; cursor: pointer; }
 .trace-field circle {
   fill: var(--orange-dim);
 }
+
 /* ==========================================================================
    Layout helpers
    ========================================================================== */
@@ -285,6 +288,8 @@ button { font-family: inherit; cursor: pointer; }
   grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
+  width: 100%;
+  min-width: 0; /* Prevents grid children from forcing width */
 }
 
 .hero-kicker {
@@ -342,6 +347,10 @@ button { font-family: inherit; cursor: pointer; }
 .hero-panel {
   opacity: 0;
   animation: rise 800ms ease 420ms forwards;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden; /* Prevents terminal from pushing page wide */
 }
 
 .panel-window {
@@ -350,6 +359,7 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 30px 60px -30px rgba(255, 90, 31, 0.18);
+  width: 100%;
 }
 
 .panel-titlebar {
@@ -379,9 +389,22 @@ button { font-family: inherit; cursor: pointer; }
   padding: 1.25rem 1.4rem 1.5rem;
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  min-width: 550px;
+  min-width: 0;
+  width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere; /* Forces long lines to break */
+  box-sizing: border-box;
 }
-.panel-body p { margin: 0 0 0.55rem; color: var(--dim); white-space: pre-wrap; }
+
+.panel-body p { 
+  margin: 0 0 0.55rem; 
+  color: var(--dim); 
+  white-space: pre-wrap; 
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
 .panel-body .pr { color: var(--orange-bright); }
 .panel-body .pd { color: var(--dimmer); }
 .line-out { color: #b7e6b0 !important; padding-left: 0.1rem; }
@@ -706,18 +729,82 @@ button { font-family: inherit; cursor: pointer; }
     overflow: hidden;
     transition: max-height 260ms ease;
   }
-  .main-nav.is-open { max-height: 420px; }
-  .main-nav ul { flex-direction: column; gap: 0; padding: 0.5rem var(--gutter) 1rem; }
-  .main-nav li { border-bottom: 1px solid var(--line); }
-  .main-nav .nav-link { display: block; padding: 0.9rem 0; }
-  .nav-toggle { display: flex; }
-  .header-actions .btn-ghost { display: none; }
+  .hero-panel {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .panel-body {
+    font-size: 0.7rem;
+    padding: 0.85rem;
+    min-width: 0;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  .panel-body p {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  .about_image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+  .section {
+    padding: 3rem 0;
+  }
+  .hero {
+    padding-top: 6rem;
+  }
+  .main-nav.is-open { 
+    max-height: 420px;
+  }
+  .main-nav ul { 
+    flex-direction: column;
+    gap: 0; 
+    padding: 0.5rem var(--gutter) 1rem; 
+  }
+  .main-nav li { 
+    border-bottom: 1px solid var(--line); 
+  }
+  .main-nav .nav-link {
+     display: block; 
+     padding: 0.9rem 0; 
+  }
+  .nav-toggle { 
+    display: flex;
+  }
+  .header-actions .btn-ghost { 
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
-  .about-facts { grid-template-columns: 1fr 1fr; }
-  .hero-meta { gap: 1.5rem; }
-  .footer-inner { flex-direction: column; text-align: center; }
+  .about-facts { 
+    grid-template-columns: 1fr; 
+  }
+  .hero-meta {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-inner { 
+    flex-direction: column; 
+    text-align: center; 
+  }
 }
 
 /* ==========================================================================
