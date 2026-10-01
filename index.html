@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risana Bonnia Maluleke — Junior Software Developer &amp; Computer Systems Engineer</title>
+<meta name="description" content="Portfolio of Risana Bonnia Maluleke, a Computer Systems Engineering student and junior full-stack developer building web applications, databases and IoT systems.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative circuit-trace backdrop, purely visual -->
+<svg class="trace-field" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+  <path class="trace-line" d="M0 120 H240 V60 H520 V220 H860 V120 H1440" />
+  <path class="trace-line" d="M0 480 H180 V620 H460 V520 H900 V680 H1440" />
+  <path class="trace-line" d="M120 0 V180 H0" />
+  <path class="trace-line" d="M1320 0 V140 H1440" />
+  <circle cx="240" cy="120" r="4"></circle>
+  <circle cx="520" cy="60" r="4"></circle>
+  <circle cx="860" cy="220" r="4"></circle>
+  <circle cx="180" cy="480" r="4"></circle>
+  <circle cx="460" cy="620" r="4"></circle>
+  <circle cx="900" cy="520" r="4"></circle>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Home">
+      <span class="brand-mark">RBM</span>
+      <span class="brand-text">Risana Bonnia Maluleke</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="Docs/RISANA BONNIA MALULEKE.pdf" class="btn btn-ghost btn-small" download>Download CV</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-kicker">Computer Systems Engineering student</p>
+        <h1>Building software and<br>systems that <span class="accent-text">actually ship.</span></h1>
+        <p class="hero-lede">
+          Computer Systems Engineering student with hands-on experience in software development, full-stack web development, embedded systems, networking, databases, and Linux infrastructure. Skilled in Python, C++, JavaScript, Flask, MySQL, Git, ESP32, and cloud/server technologies, with practical experience building and deploying production applications. Passionate about solving real-world problems through technology and continuously developing innovative, reliable systems.
+
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-value">1</span>
+            <span class="meta-label">Live production platform</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-value">3+</span>
+            <span class="meta-label">Full-stack &amp; IoT builds</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-value">ZA</span>
+            <span class="meta-label">Based in South Africa</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-hidden="true">
+        <div class="panel-window">
+          <div class="panel-titlebar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="panel-title">system_status.log</span>
+          </div>
+          <div class="panel-body">
+            <p><span class="pr">root@vut</span>:<span class="pd">~</span>$ ./boot_profile.sh</p>
+            <p class="line-out">[ OK ] developer&nbsp;: Risana Bonnia Maluleke</p>
+            <p class="line-out">[ OK ] role&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Computer Systems Engineering Student</p>
+            <p class="line-out">[ OK ] focus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Software · Cloud · Networks · Embedded</p>
+            <p class="line-out">[ OK ] stack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Python · Flask · MySQL · JavaScript</p>
+            <p class="line-out">[ OK ] embedded&nbsp;&nbsp;: ESP32 · Arduino · Sensors</p>
+            <p class="line-out">[ OK ] status&nbsp;&nbsp;&nbsp;&nbsp;: Open to junior &amp; graduate opportunities</p> 
+            <p class="cursor-line"><span class="pr">root@vut</span>:<span class="pd">~</span>$ <span class="caret">▍</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-head">
+        <h2>About me</h2>
+        <br>
+        <img class="about_image" src="images/image.png" alt="about me picture">
+      </div>
+      <div class="about-copy">
+        <p>
+          I’m a Computer Systems Engineering student with 
+          a passion for building technology rather than simply learning about it.
+        </p>
+        <p>
+          My interests span software development, web technologies, databases, networking, 
+          embedded systems, cloud infrastructure, and Linux-based systems. 
+          I enjoy taking an idea, breaking it down into smaller technical problems, 
+          and developing a working solution from the ground up.
+        </p>
+        <p>
+          One of the projects that has contributed significantly to my practical experience is the development of HOTSHOT,
+           an e-commerce platform that I designed and developed as a real-world web application. 
+          Working on HOTSHOT allowed me to go beyond writing frontend and backend code. I worked with Python and Flask for the application backend, HTML,
+           CSS and JavaScript for the user interface, Jinja for dynamic templates, and MySQL for data management.
+        </p>
+        <p>Building and deploying the platform also exposed me to areas of technology that are often difficult to learn purely from a classroom environment. 
+          I gained practical experience with Linux and Ubuntu servers, Nginx, Gunicorn,
+           Cloudflare, DNS configuration, SSL/TLS, domain deployment, environment variables, Git, database management,
+           authentication, payment integration, e-commerce workflows, and troubleshooting production issues.
+          </p>
+          <p>
+            I have also worked on embedded and IoT projects using ESP32 microcontrollers, sensors, and automation systems.
+             These projects have helped me understand how software interacts with physical hardware and strengthened my skills in programming, electronics, debugging, and system design.
+          </p>
+          <p>
+            I also enjoy helping other students learn programming and technology.
+             Teaching has strengthened my communication skills while challenging me to understand technical concepts deeply enough to explain them clearly.
+          </p>
+          <p>
+            I believe that building real projects is one of the most effective ways to become a better technologist.
+             Every project gives me an opportunity to learn something new, solve problems, make mistakes, and improve.
+          </p>
+          <p>
+            My goal is to continue developing as a technology professional and eventually work on innovative systems where software,
+             Hardware, networking, and cloud technologies come together to solve real-world problems.
+          </p>
+      </div>
+      <ul class="about-facts">
+  <li>
+    <span class="fact-label"><strong>Focus</strong></span>
+    <span class="fact-value">Software, embedded systems &amp; infrastructure</span>
+  </li>
+
+  <li>
+    <span class="fact-label"><strong>Currently</strong></span>
+    <span class="fact-value">Dip. Electrical Eng: Computer Systems, VUT</span>
+  </li>
+
+  <li>
+    <span class="fact-label"><strong>Comfortable in</strong></span>
+    <span class="fact-value">Python, C++, JavaScript, SQL, Flask &amp; MySQL</span>
+  </li>
+
+  <li>
+    <span class="fact-label"><strong>Experience</strong></span>
+    <span class="fact-value">Web development, IoT, networking &amp; Linux systems</span>
+  </li>
+
+  <li>
+    <span class="fact-label"><strong>Built</strong></span>
+    <span class="fact-value">Production e-commerce &amp; embedded IoT systems</span>
+  </li>
+
+  <li>
+    <span class="fact-label"><strong>Looking for</strong></span>
+    <span class="fact-value">Graduate / junior software &amp; computer systems roles</span>
+  </li>
+</ul>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+  <div class="section-inner">
+
+    <div class="section-head">
+      <h2>Technical skills</h2>
+      <p class="section-sub">
+        Technologies and tools I use to build, connect, deploy, and maintain real systems.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Programming -->
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>C++</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-group">
+        <h3>Web Development</h3>
+        <ul class="tag-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Flask</li>
+          <li>Jinja</li>
+          <li>REST APIs</li>
+          <li>Responsive Design</li>
+          <li>Form Validation</li>
+          <li>Authentication</li>
+          <li>Session Management</li>
+        </ul>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <ul class="tag-list">
+          <li>MySQL</li>
+          <li>SQLite</li>
+          <li>SQL Queries</li>
+          <li>Database Design</li>
+          <li>Relationships</li>
+          <li>CRUD Operations</li>
+          <li>Data Validation</li>
+        </ul>
+      </div>
+
+      <!-- DevOps & Deployment -->
+      <div class="skill-group">
+        <h3>DevOps &amp; Deployment</h3>
+        <ul class="tag-list">
+          <li>Linux</li>
+          <li>Ubuntu Server</li>
+          <li>Nginx</li>
+          <li>Gunicorn</li>
+          <li>Cloudflare</li>
+          <li>DNS</li>
+          <li>SSL/TLS</li>
+          <li>VPS Deployment</li>
+          <li>Systemd</li>
+          <li>Environment Variables</li>
+        </ul>
+      </div>
+
+      <!-- Version Control & Tools -->
+      <div class="skill-group">
+        <h3>Development Tools</h3>
+        <ul class="tag-list">
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>Linux Terminal</li>
+          <li>Python-dotenv</li>
+          <li>Debugging</li>
+          <li>System Troubleshooting</li>
+        </ul>
+      </div>
+
+      <!-- Embedded & IoT -->
+      <div class="skill-group">
+        <h3>Embedded &amp; IoT</h3>
+        <ul class="tag-list">
+          <li>ESP32</li>
+          <li>ESP32-CAM</li>
+          <li>Arduino</li>
+          <li>Wemos D1 R32</li>
+          <li>Microcontrollers</li>
+          <li>Sensor Integration</li>
+          <li>IoT Systems</li>
+          <li>Smart-Home Automation</li>
+          <li>Embedded Programming</li>
+        </ul>
+      </div>
+
+      <!-- Electronics -->
+      <div class="skill-group">
+        <h3>Electronics &amp; Sensors</h3>
+        <ul class="tag-list">
+          <li>PIR Sensors</li>
+          <li>DHT22</li>
+          <li>DS18B20</li>
+          <li>LDR</li>
+          <li>Ultrasonic Sensors</li>
+          <li>Flame Sensors</li>
+          <li>Digital Systems</li>
+          <li>Circuit Design</li>
+        </ul>
+      </div>
+
+      <!-- Networking -->
+      <div class="skill-group">
+        <h3>Networking</h3>
+        <ul class="tag-list">
+          <li>Computer Networks</li>
+          <li>TCP/IP</li>
+          <li>IP Addressing</li>
+          <li>Network Configuration</li>
+          <li>Network Troubleshooting</li>
+          <li>Network Security</li>
+          <li>Client-Server Architecture</li>
+        </ul>
+      </div>
+
+      <!-- APIs & Integrations -->
+      <div class="skill-group">
+        <h3>APIs &amp; Integrations</h3>
+        <ul class="tag-list">
+          <li>REST APIs</li>
+          <li>API Integration</li>
+          <li>JSON</li>
+          <li>HTTP Requests</li>
+          <li>Payment Integration</li>
+          <li>PayFast</li>
+          <li>Webhooks</li>
+        </ul>
+      </div>
+
+      <!-- E-Commerce -->
+      <div class="skill-group">
+        <h3>E-Commerce Systems</h3>
+        <ul class="tag-list">
+          <li>Shopping Carts</li>
+          <li>Checkout Systems</li>
+          <li>Order Management</li>
+          <li>Payment Processing</li>
+          <li>Inventory Management</li>
+          <li>User Authentication</li>
+          <li>Product Management</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Featured projects</h2>
+        <p class="section-sub">A production e-commerce platform, an IoT security system, and smaller builds along the way.</p>
+      </div>
+
+      <article class="project-card project-card--featured">
+        <span class="project-flag">Main project · live &amp; deployed</span>
+        <div class="project-media">
+          <div class="media-frame">
+            <img src="images/hotshot.jpeg" alt="Preview of the HotShot Fabrics e-commerce website" loading="lazy">
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>HotShot Fabrics — E-Commerce Platform</h3>
+          <p>
+            A fully deployed e-commerce website built for HotShot Fabrics, covering everything from
+            product browsing to checkout and order fulfilment. This is the project I'd point to first:
+            it's running in production behind Nginx, Gunicorn and Cloudflare, not just on localhost.
+          </p>
+          <ul class="feature-list">
+            <li>Product catalogue with categories &amp; search</li>
+            <li>Shopping cart &amp; full checkout flow</li>
+            <li>User authentication &amp; accounts</li>
+            <li>Online payments &amp; order management</li>
+            <li>Inventory tracking &amp; product reviews</li>
+            <li>Delivery options &amp; responsive design</li>
+          </ul>
+          <div class="tech-row">
+            <span>Python</span><span>Flask</span><span>Jinja</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span><span>Nginx</span><span>Gunicorn</span><span>Cloudflare</span>
+          </div>
+          <div class="project-actions">
+            
+            <a href="https://www.hotshotfabrics.co.za/" class="btn btn-primary btn-small">Visit Site</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-media">
+            <div class="media-frame">
+              <img src="images/Screenshot 2026-10-01 022604.png" alt="Preview of the smart home automation dashboard" loading="lazy">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Smart Home Automation &amp; Security System</h3>
+            <p>
+              A smart-home security and automation system designed for homeowners
+              who are away from their property. The system combines ESP/Arduino-based
+              sensors with a Flask web application and MySQL database to monitor
+              environmental conditions, motion and indoor/outdoor device states,
+              while sending security alerts through Telegram.
+            </p>
+            <ul class="feature-list">
+              <li>ESP/Arduino sensor integration</li>
+              <li>Temperature &amp; humidity monitoring</li>
+              <li>Motion detection &amp; security monitoring</li>
+              <li>Flask web dashboard for sensor data</li>
+              <li>MySQL sensor-data storage</li>
+              <li>Automated Telegram security alerts</li>
+            </ul>
+            <div class="tech-row">
+              <span>ESP/Arduino</span>
+              <span>C++</span>
+              <span>Python</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+              <span>REST/HTTP</span>
+              <span>Telegram API</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/bonniar/Engineering-Programming-3_Project" class="btn btn-outline btn-small">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        
+
+        <article class="project-card">
+          <div class="project-media">
+            <div class="media-frame">
+              <img src="images/Rachel.png" alt="Preview of the Responsive Business Website project" loading="lazy">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Rachel M Hampers</h3>
+            <p>
+              A modern responsive website developed for Rachel M Hampers to establish an online presence and showcase the business, its products, solutions, and contact information.
+            </p>
+            <ul class="feature-list">
+              <li> Responsive website design and development</li>
+              <li>Multi-page website structure</li>
+              <li>Custom HTML & CSS</li>
+              <li>Product/business presentation</li>
+              <li>Responsive layouts for different screen sizes</li>
+              <li>Custom imagery and visual presentation</li>
+              <li>Deployment using Vercel</li>
+            </ul>
+            <div class="tech-row">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/bonniar/rachel_m_hampers" class="btn btn-outline btn-small">GitHub</a>
+              <a href="https://rachelmhampers.vercel.app/" class="btn btn-outline btn-small">Live demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+<section class="section section-alt" id="education">
+  <div class="section-inner">
+
+    <div class="section-head">
+      <h2>Education</h2>
+      <p class="section-sub">
+        Academic foundation and professional certifications supporting my technical development.
+      </p>
+    </div>
+
+    <!-- Main qualification -->
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+
+        <div class="timeline-content">
+          <h3>Diploma in Electrical Engineering: Computer Systems</h3>
+
+          <p class="timeline-org">
+            Vaal University of Technology
+          </p>
+
+          <p>
+            Coursework spanning software development, databases, computer networking,
+            digital systems, embedded electronics and computer systems — supported by
+            hands-on projects involving web applications, IoT systems and technology
+            infrastructure.
+          </p>
+
+          <div class="education-tags">
+            <span>Computer Systems</span>
+            <span>Software Development</span>
+            <span>Networking</span>
+            <span>Embedded Systems</span>
+            <span>Databases</span>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <!-- Certifications -->
+    <div class="certifications">
+      <div class="certifications-head">
+        <h3>Certifications &amp; Training</h3>
+        <p>
+          Additional certifications and technical training completed alongside my studies.
+        </p>
+      </div>
+
+      <div class="certifications-grid">
+
+        <!-- Certificate 1 -->
+        <article class="certificate-card">
+
+          <div class="certificate-badge">
+            <img src="images/Networks2.png" alt="CCNA: Switching, Routing, and Wireless Essentials badge">
+          </div>
+
+          <div class="certificate-info">
+            <span class="certificate-type">CISCO CERTIFICATION</span>
+
+            <h4>CCNA: Switching, Routing, and Wireless Essentials</h4>
+
+            <p class="certificate-provider"> Cisco Networking Academy</p>
+
+            <p class="certificate-description">
+              Student-level credential covering switching operations, wired and wireless
+              LAN configuration, routing, redundancy, network security and
+              troubleshooting, with hands-on Cisco Packet Tracer and networking labs.
+            </p>
+
+            <p class="certificate-date">Issued: April 23, 2026</p>
+          </div>
+
+          <a href="Docs/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_224072404-edu-vut-ac-za_408cae95-2a25-45c5-8dde-e970c16c2513.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-small">View Certificate</a>
+
+        </article>
+
+        <!-- Certificate 2 -->
+        <article class="certificate-card">
+
+          <div class="certificate-badge">
+            <img src="images/Linux.png" alt="NDG Linux Essentials certificate badge">
+          </div>
+
+          <div class="certificate-info">
+            <span class="certificate-type">CISCO / NDG CERTIFICATION</span>
+
+            <h4>NDG Linux Essentials</h4>
+
+            <p class="certificate-provider">Cisco Networking Academy</p>
+
+            <p class="certificate-description">
+      Completed the NDG Linux Essentials course through the Cisco Networking
+      Academy program, developing foundational knowledge of Linux systems,
+      command-line operations, file management and system administration.
+    </p>
+
+    <p class="certificate-date">
+      Completed: July 29, 2024
+    </p>
+  </div>
+
+  <a
+    href="Docs/Partner-_NDG_Linux_Essentials_certificate_224072404-edu-vut-ac-za_4b86b3c5-6f2e-41d2-9bf7-9fcea6e1763e.pdf"
+    target="_blank"
+    rel="noopener"
+    class="btn btn-outline btn-small"
+  >
+    View Certificate
+  </a>
+
+        </article>
+        <!-- Certificate 3 -->
+        <article class="certificate-card">
+
+  <div class="certificate-badge">
+    <img
+      src="images/Networks1.png"
+      alt="CCNAv7: Introduction to Networks certificate"
+    >
+  </div>
+
+  <div class="certificate-info">
+    <span class="certificate-type">CISCO CERTIFICATION</span>
+
+    <h4>CCNAv7: Introduction to Networks</h4>
+
+    <p class="certificate-provider">
+      Cisco Networking Academy
+    </p>
+
+    <p class="certificate-description">
+      Successfully completed the CCNAv7: Introduction to Networks course,
+      developing foundational knowledge of networking concepts, network
+      communication, connectivity and basic network configuration.
+    </p>
+
+    <p class="certificate-date">
+      Completed: July 17, 2024
+    </p>
+  </div>
+
+  <a
+    href="Docs/CCNA-_Introduction_to_Networks_certificate_224072404-edu-vut-ac-za_4bbcb77f-5822-4e5e-b460-361298c2996d.pdf"
+    target="_blank"
+    rel="noopener"
+    class="btn btn-outline btn-small"
+  >
+    View Certificate
+  </a>
+
+</article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="section-sub">Practical development experience built through client and personal projects.</p>
+      </div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Full-Stack Developer — Client Projects</h3>
+            <p class="timeline-org">Freelance / independent</p>
+            <p>
+              Designed and deployed a production e-commerce platform end-to-end: database schema,
+              Flask backend, authentication, payments and order management, then shipped it to a
+              live server with Nginx, Gunicorn and Cloudflare in front of it.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>IoT &amp; Embedded Systems — Personal Projects</h3>
+            <p class="timeline-org">Independent build</p>
+            <p>
+              Built a multi-sensor smart-home security system on ESP32 hardware, streaming live
+              readings and camera footage to a Flask + Socket.IO dashboard for real-time monitoring.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Technical Support &amp; Networking</h3>
+            <p class="timeline-org">Coursework &amp; independent work</p>
+            <p>
+              Hands-on troubleshooting across computer hardware, networking and Linux systems,
+              alongside coursework in databases and computer systems architecture.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p class="section-sub">What I can take on for you or your business.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Web development</h3>
+          <p>Custom websites and web apps built from scratch, front to back.</p>
+        </div>
+        <div class="service-card">
+          <h3>Website maintenance</h3>
+          <p>Ongoing updates, fixes and content changes for existing sites.</p>
+        </div>
+        <div class="service-card">
+          <h3>Python / Flask development</h3>
+          <p>Backend applications, APIs and internal tools built in Python and Flask.</p>
+        </div>
+        <div class="service-card">
+          <h3>Database development</h3>
+          <p>Schema design, MySQL/SQLite setup, and data-driven application support.</p>
+        </div>
+        <div class="service-card">
+          <h3>Technical support</h3>
+          <p>Practical troubleshooting for software, systems and everyday IT issues.</p>
+        </div>
+        <div class="service-card">
+          <h3>Computer troubleshooting</h3>
+          <p>Diagnosing and fixing hardware and software problems on desktops and laptops.</p>
+        </div>
+        <div class="service-card">
+          <h3>IoT development</h3>
+          <p>ESP32/Arduino builds with sensors, connected to a web dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="section-head contact-head">
+        <h2>Get in touch</h2>
+        <p class="section-sub">
+          Have a project, a role, or a question about something I've built? Send a message or
+          reach out directly.
+        </p>
+        <ul class="contact-links">
+          <li>
+            <a href="https://github.com/bonniar" target="_blank" rel="noopener">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              </span>
+              github.com/bonniar
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/risana-bonnia" target="_blank" rel="noopener">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.04 1 2.48 1s2.5 1.12 2.5 2.5ZM.24 8.5h4.5V23H.24V8.5ZM8.5 8.5h4.32v1.98h.06c.6-1.1 2.06-2.26 4.24-2.26 4.53 0 5.36 2.9 5.36 6.68V23h-4.5v-6.42c0-1.53-.03-3.5-2.14-3.5-2.15 0-2.48 1.65-2.48 3.36V23H8.5V8.5Z"/></svg>
+              </span>
+              linkedin.com/in/risana-bonnia
+            </a>
+          </li>
+          <li>
+            <a href="mailto:bonniar23@gmail.com">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1.4 2 8.6 6.45L20.6 6H3.4ZM21 7.4l-8.4 6.3a1 1 0 0 1-1.2 0L3 7.4V18h18V7.4Z"/></svg>
+              </span>
+              bonniar23@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form
+  class="contact-form"
+  id="contact-form"
+  action="https://formspree.io/f/xrpbdjna"
+  method="POST"
+  novalidate
+>
+  <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+  <div class="form-row">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" autocomplete="name" required>
+  </div>
+
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
+  </div>
+
+  <div class="form-row">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+  </div>
+
+  <div class="form-row">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary form-submit">
+    Send message
+  </button>
+
+  <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+</form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Risana Bonnia. All rights reserved.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
